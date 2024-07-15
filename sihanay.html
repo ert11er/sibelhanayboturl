@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            padding: 90px 90px; /* Adjust padding for larger buttons */
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px; /* Increase border radius for rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='https://wa.me/+905322828274'">WhatsApp</button>
+        <button class="button" onclick="copyPhoneNumber()">Numara</button>
+        <button class="button" onclick="copyEmail()">E-posta</button>
+    </div>
+
+    <script>
+        function copyPhoneNumber() {
+            const phoneNumber = "05322828274";
+            navigator.clipboard.writeText(phoneNumber);
+            alert("Numara kopyalandı: " + phoneNumber);
+        }
+
+        function copyEmail() {
+            const email = "sihanay@hotmail.com";
+            navigator.clipboard.writeText(email);
+            alert("E-Posta addresi kopyalandı: " + email);
+        }
+    </script>
+</body>
+</html>
